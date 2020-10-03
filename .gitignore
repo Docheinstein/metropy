@@ -1,0 +1,10 @@
+/venv
+/dist
+.idea
+/metropy.egg-info/
+__pycache__
+/.tox/
+.pytest_cache
+/build/
+*.pyc
+!/metropy/sounds.old/
