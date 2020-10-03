@@ -12,7 +12,7 @@ print("setup.py prefix:", sys.prefix)
 
 setup(
     name="metropy",
-    version="0.1",
+    version="0.3",
 
     # Requires python3.6
     python_requires=">=3.6",
@@ -40,6 +40,6 @@ setup(
     keywords="metronome",
     url="https://github.com/Docheinstein/metropy",
     install_requires=[
-
+        "pyaudio"
     ]
 )
