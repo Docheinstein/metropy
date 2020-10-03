@@ -274,7 +274,7 @@ class UI:
                 break
 
     def _handle_key(self, key) -> bool:
-        eprint("Input:", key)
+        # eprint("Input:", key)
 
         # Common
         if key == ord("q"):
@@ -288,12 +288,10 @@ class UI:
 
         if self._is_atop(self._wdetector):
             def newbeat():
-                eprint(f"newbeat ({self._detection_beats + 1})")
                 self._detection_last_beat_time = time.time_ns()
                 self._detection_beats += 1
 
             if key == ord(" "):
-                eprint("space while detecting")
                 if not self._is_detecting() or self._is_detection_completed():
                     self._cleanup_detector()
                     self._detecting = True
@@ -301,7 +299,6 @@ class UI:
                 newbeat()
 
             if key == ord("\n") and self._is_detecting():
-                eprint("enter while detecting")
                 newbeat()
                 self._detection_end_time = time.time_ns()
                 self._detecting = False
