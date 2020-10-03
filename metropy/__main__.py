@@ -185,7 +185,7 @@ class UI:
         ("UP", "decrease bpm by 5"),
         ("DOWN", "increase bpm by 5"),
         ("LEFT", "decrease bpm by 1"),
-        ("RIGHT", "increase bpm by 5"),
+        ("RIGHT", "increase bpm by 1"),
         ("1/2/3/4/5/6/7/8/9", "change the beats per bar"),
         ("d", "show/hide bpm detector"),
         ("h", "show/hide help"),
